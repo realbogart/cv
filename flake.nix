@@ -6,20 +6,43 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          config = {
-            permittedInsecurePackages = [
-              # "qtwebkit-5.212.0-alpha4"
-              "openssl-1.1.1w"
-            ];
-          };
+          # config = {
+          #   permittedInsecurePackages = [
+          #     # When building wkhtmltopdf from source
+          #     "qtwebkit-5.212.0-alpha4"
+          #
+          #     # wkhtmltopdf-bin
+          #     "openssl-1.1.1w"
+          #   ];
+          # };
         };
+        dependencies = with pkgs; [
+          # wkhtmltopdf 
+          # wkhtmltopdf-bin
+          puppeteer-cli
+          # open-sans
+          # arkpandora_ttf
+          python3
+          # htmldoc
+        ];
       in {
-        devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs;
-            [
-              # wkhtmltopdf 
-              wkhtmltopdf-bin
-            ];
+        devShells.default = pkgs.mkShell { buildInputs = dependencies; };
+        packages.default = pkgs.stdenv.mkDerivation {
+          name = "cv";
+          inherit system;
+          src = ./.;
+          # buildInputs = dependencies;
+          buildInputs = dependencies;
+          dontUnpack = true;
+          preConfigure = ''
+            export FONT_PATH=$src
+          '';
+          installPhase = ''
+            cd $src
+            echo "Building CV..."
+            echo "FONT_PATH set to $FONT_PATH"
+            puppeteer print --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out
+          '';
         };
       });
 }

@@ -1,0 +1,280 @@
+/*
+Palette:
+#53678D - White
+#F5F5F5 - White Smoke
+#231F20 - Raisin Black
+#53678D - Lapis Luzuli
+#74521A - Field Drab
+
+Icons:
+https://fontawesome.com/
+*/
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4_18pt-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro_36pt-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4_36pt-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro_48pt-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4_48pt-Light.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSerifPro-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sourceserifpro/static/SourceSerif4-Bold.ttf")
+    format("truetype");
+}
+
+body,
+html {
+  /* min-height: 100vh; */
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  color: #231f20;
+  font-family: "SourceSerifPro-Light";
+  /* font-family: "Arial"; */
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  float: left;
+  width: calc(100% - 32px);
+  height: 112px;
+  box-sizing: border-box;
+  /* background-color: blue; */
+  text-align: center;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-color: #222831ff;
+  border-style: solid;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.container_content {
+  float: left;
+  width: 100%;
+  /* height: 80%; */
+  text-align: left;
+}
+
+.left {
+  float: left;
+  width: 288px;
+  text-align: right;
+  margin-left: 16px;
+  padding: 16px;
+  padding-top: 0px;
+  background-color: #f5f5f5;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 1px;
+  border-color: #231f20;
+  border-style: solid;
+}
+
+.main {
+  float: left;
+  /* height: 100%; */
+  width: calc(100% - 256px - 48px);
+  padding: 16px;
+  padding-right: 32px;
+  padding-top: 0px;
+}
+
+.footer {
+  float: left;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 16px;
+  margin: 16px;
+  width: calc(100% - 32px);
+  height: 2px;
+  border-left: 0px;
+  border-top: 1px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-color: #222831ff;
+  border-style: solid;
+}
+
+.header h1 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  font-size: 36px;
+  font-family: "SourceSerifPro_36pt-Light";
+  color: #231f20;
+}
+
+.header h2 {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-size: 18px;
+  padding-top: 0px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.left h1 {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-size: 18px;
+  font-weight: bold;
+  color: #53678d;
+  margin-bottom: -8px;
+  /* font-family: "SourceSerifPro-Bold"; */
+}
+
+.left h2 {
+  font-family: "SourceSerifPro-Light";
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #231f20;
+}
+
+.timespan {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.info {
+  float: right;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.experience {
+  float: left;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.experience-list {
+  float: left;
+  width: 100%;
+}
+
+.experience-list ul {
+  margin-top: 0px;
+}
+
+.experience-list li {
+  margin-top: 8px;
+}
+
+/* .experience-header { */
+/*   margin-bottom: -654px; */
+/* } */
+
+.role {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #d81159;
+  /* font-style: italic; */
+}
+
+.workplace {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-bottom: -16px; */
+  float: left;
+  /* font-style: italic; */
+}
+
+.main h1 {
+  font-family: "SourceSerifPro_18pt-Light";
+  font-size: 18px;
+  /* color: #74521a; */
+  color: #53678d;
+  /* margin-top: 16px; */
+  margin-bottom: -8px;
+}
+
+.main h2 {
+  font-family: "SourceSerifPro-Light";
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.contact {
+  font-family: "SourceSerifPro-Regular";
+  text-decoration: none;
+  /* color: #d81e5b; */
+  color: #0474dc;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-left: 16px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
