@@ -75,7 +75,7 @@ html {
   color: #231f20;
   font-family: "SourceSerifPro-Light";
   /* font-family: "Arial"; */
-  font-size: 12px;
+  font-size: 9.5pt;
 }
 
 * {
@@ -163,7 +163,7 @@ html {
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-top: 16px;
-  font-size: 36px;
+  font-size: 32pt;
   font-family: "SourceSerifPro_36pt-Light";
   color: #231f20;
 }
@@ -256,7 +256,7 @@ html {
 }
 
 .main h2 {
-  font-family: "SourceSerifPro-Light";
+  font-family: "SourceSerifPro-Regular";
   font-size: 16px;
   margin-bottom: 0px;
 }
@@ -276,5 +276,5 @@ html {
 }
 
 .section {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
