@@ -1,7 +1,7 @@
 # My CV
 
-# Build manually
+# Build using Nix
 
 ```bash
-./build-cv.sh
+nix build github:realbogart/cv
 ```
