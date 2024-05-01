@@ -26,14 +26,6 @@ https://fontawesome.com/
 }
 
 @font-face {
-  font-family: "SourceSerifPro-Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/sourceserifpro/static/SourceSerif4-Regular.ttf")
-    format("truetype");
-}
-
-@font-face {
   font-family: "SourceSerifPro_18pt-Light";
   font-style: normal;
   font-weight: 400;
@@ -256,13 +248,13 @@ html {
 }
 
 .main h2 {
-  font-family: "SourceSerifPro-Regular";
+  font-family: "SourceSerifPro-Light";
   font-size: 16px;
   margin-bottom: 0px;
 }
 
 .contact {
-  font-family: "SourceSerifPro-Regular";
+  font-family: "SourceSerifPro-Light";
   text-decoration: none;
   /* color: #d81e5b; */
   color: #0474dc;
