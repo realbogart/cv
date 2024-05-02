@@ -46,11 +46,11 @@
             puppeteer print --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out/cv.pdf
           '';
         };
-        apps.default = {
-          type = "app";
-          program = "${pkgs.xdg-utils}/bin/xdg-open ${
-              self.packages.${system}.default
-            }/cv.pdf";
-        };
+        # apps.default = {
+        #   type = "app";
+        #   program = "${pkgs.xdg-utils}/bin/xdg-open ${
+        #       self.packages.${system}.default
+        #     }/cv.pdf";
+        # };
       });
 }
