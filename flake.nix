@@ -32,7 +32,6 @@
           name = "cv";
           inherit system;
           src = ./.;
-          # buildInputs = dependencies;
           buildInputs = dependencies;
           dontUnpack = true;
           preConfigure = ''
