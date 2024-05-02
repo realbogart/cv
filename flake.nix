@@ -24,6 +24,7 @@
           # arkpandora_ttf
           python3
           # htmldoc
+          xdg-utils
         ];
       in {
         devShells.default = pkgs.mkShell { buildInputs = dependencies; };
@@ -39,10 +40,18 @@
           '';
           installPhase = ''
             cd $src
-            echo "Building CV..."
             echo "FONT_PATH set to $FONT_PATH"
-            puppeteer print --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out
+            echo "Building CV..."
+            mkdir $out
+            sleep 1
+            puppeteer print --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out/cv.pdf
           '';
+        };
+        apps.default = {
+          type = "app";
+          program = "${pkgs.xdg-utils}/bin/xdg-open ${
+              self.packages.${system}.default
+            }/cv.pdf";
         };
       });
 }
