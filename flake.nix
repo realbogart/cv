@@ -27,7 +27,9 @@
           xdg-utils
           # chromedriver
           chromium
+          # firefox
           # google-chrome
+          # ungoogled-chromium
           (python311.withPackages (ps: with ps; [ pyppeteer ]))
         ];
         # library_dependencies = with pkgs; [ xorg.libX11 gtk3 ];
@@ -35,6 +37,21 @@
         devShells.default = pkgs.mkShell { buildInputs = dependencies; };
         packages.default = pkgs.stdenv.mkDerivation {
           name = "cv";
+          inherit system;
+          src = ./.;
+          buildInputs = dependencies;
+          dontUnpack = true;
+          installPhase = ''
+            cd $src
+            echo "Create temporary home"
+            export HOME=$(mktemp -d)
+            echo "Building CV..."
+            mkdir $out
+            python convert.py $out/cv.pdf
+          '';
+        };
+        packages.puppeteer = pkgs.stdenv.mkDerivation {
+          name = "cv-puppeteer";
           inherit system;
           src = ./.;
           buildInputs = dependencies;
