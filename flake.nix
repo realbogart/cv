@@ -6,7 +6,7 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          # config = {
+          # config.allowUnfree = true;
           #   permittedInsecurePackages = [
           #     # When building wkhtmltopdf from source
           #     "qtwebkit-5.212.0-alpha4"
@@ -22,10 +22,15 @@
           puppeteer-cli
           # open-sans
           # arkpandora_ttf
-          python3
+          # python3
           # htmldoc
           xdg-utils
+          # chromedriver
+          chromium
+          # google-chrome
+          (python311.withPackages (ps: with ps; [ pyppeteer ]))
         ];
+        # library_dependencies = with pkgs; [ xorg.libX11 gtk3 ];
       in {
         devShells.default = pkgs.mkShell { buildInputs = dependencies; };
         packages.default = pkgs.stdenv.mkDerivation {
@@ -42,7 +47,7 @@
             echo "FONT_PATH set to $FONT_PATH"
             echo "Building CV..."
             mkdir $out
-            puppeteer print --wait-until networkidle0 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out/cv.pdf
+            puppeteer print --wait-until networkidle0 --wait-until networkidle2 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 index.html $out/cv.pdf
           '';
         };
         # apps.default = {
