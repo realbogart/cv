@@ -30,7 +30,7 @@ async def main():
             'args': ['--no-sandbox', '--disable-web-security', '--disable-setuid-sandbox']
         })
         page = await browser.newPage()
-        await page.goto(f'http://localhost:{port}/index.html', {'waitUntil': 'networkidle2'})
+        await page.goto(f'http://localhost:{port}/index.html', {'waitUntil': 'load', 'timeout': 5000})
         await page.waitForFunction('document.fonts.ready');
         await page.evaluateHandle('document.fonts.ready');
         await page.pdf({
