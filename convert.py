@@ -30,8 +30,9 @@ async def main():
             'args': ['--no-sandbox', '--disable-web-security', '--disable-setuid-sandbox']
         })
         page = await browser.newPage()
-        # Now navigating to the HTTP server running on localhost at the specified port
-        await page.goto(f'http://localhost:{port}/index.html', {'waitUntil': 'networkidle0'})
+        await page.goto(f'http://localhost:{port}/index.html', {'waitUntil': 'networkidle2'})
+        await page.waitForFunction('document.fonts.ready');
+        await page.evaluateHandle('document.fonts.ready');
         await page.pdf({
             'path': output_file_path,
             'format': 'A4',
@@ -40,7 +41,6 @@ async def main():
         })
         await browser.close()
     finally:
-        # No need to kill the server, as it will exit when the main thread exits
         print("PDF generation complete.")
 
 asyncio.get_event_loop().run_until_complete(main())
