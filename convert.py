@@ -34,8 +34,11 @@ async def main():
         })
         page = await browser.newPage()
         await page.goto(f'http://localhost:{port}', {'waitUntil': ['load', 'domcontentloaded', 'networkidle0'], 'timeout': 5000})
+        await page.waitFor('*')
         await page.waitForFunction('document.fonts.ready');
         await page.evaluateHandle('document.fonts.ready');
+        # await page.screenshot({ 'path': '/dev/null', 'type': "png" })
+        await page.focus('body');
         await page.pdf({
             'path': output_file_path,
             'format': 'A4',

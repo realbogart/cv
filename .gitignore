@@ -1,3 +1,4 @@
 .direnv/*
 result
 cv.pdf
+__pycache__/*

@@ -19,7 +19,7 @@
         dependencies = with pkgs; [
           # wkhtmltopdf 
           # wkhtmltopdf-bin
-          # puppeteer-cli
+          puppeteer-cli
           # open-sans
           # arkpandora_ttf
           # python3

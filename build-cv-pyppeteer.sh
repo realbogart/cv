@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python convert.py cv.pdf && xdg-open cv.pdf
+python convert.py 9876 cv.pdf && xdg-open cv.pdf
