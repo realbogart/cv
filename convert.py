@@ -27,10 +27,13 @@ async def main():
         browser = await launch({
             'headless': True,
             'executablePath': 'chromium',
+            # 'product': 'firefox',
+            # 'executablePath': 'firefox',
+            # 'protocol': 'webDriverBiDi',
             'args': ['--no-sandbox', '--disable-web-security', '--disable-setuid-sandbox']
         })
         page = await browser.newPage()
-        await page.goto(f'http://localhost:{port}/index.html', {'waitUntil': 'load', 'timeout': 5000})
+        await page.goto(f'http://localhost:{port}', {'waitUntil': ['load', 'domcontentloaded', 'networkidle0'], 'timeout': 5000})
         await page.waitForFunction('document.fonts.ready');
         await page.evaluateHandle('document.fonts.ready');
         await page.pdf({

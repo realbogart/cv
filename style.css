@@ -21,6 +21,7 @@ https://fontawesome.com/
   font-family: "SourceSerifPro-Light";
   font-style: normal;
   font-weight: 400;
+  font-display: block;
   src: url("fonts/sourceserifpro/static/SourceSerif4-Regular.ttf")
     format("truetype");
 }
@@ -29,6 +30,7 @@ https://fontawesome.com/
   font-family: "SourceSerifPro_18pt-Light";
   font-style: normal;
   font-weight: 400;
+  font-display: block;
   src: url("fonts/sourceserifpro/static/SourceSerif4_18pt-Regular.ttf")
     format("truetype");
 }
@@ -37,6 +39,7 @@ https://fontawesome.com/
   font-family: "SourceSerifPro_36pt-Light";
   font-style: normal;
   font-weight: 400;
+  font-display: block;
   src: url("fonts/sourceserifpro/static/SourceSerif4_36pt-Regular.ttf")
     format("truetype");
 }
