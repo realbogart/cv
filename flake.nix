@@ -47,7 +47,7 @@
             export HOME=$(mktemp -d)
             echo "Building CV..."
             mkdir $out
-            python convert.py $out/cv.pdf
+            python convert.py 9876 $out/cv.pdf
           '';
         };
         packages.puppeteer = pkgs.stdenv.mkDerivation {
