@@ -30,7 +30,7 @@
           # firefox
           # google-chrome
           # ungoogled-chromium
-          (python311.withPackages (ps: with ps; [ pyppeteer ]))
+          (python311.withPackages (ps: with ps; [ pyppeteer playwright ]))
         ];
         # library_dependencies = with pkgs; [ xorg.libX11 gtk3 ];
       in {
@@ -47,7 +47,7 @@
             export HOME=$(mktemp -d)
             echo "Building CV..."
             mkdir $out
-            python convert.py 9876 $out/cv.pdf
+            python convert-playwright.py 9876 $out/cv.pdf
           '';
         };
         packages.puppeteer = pkgs.stdenv.mkDerivation {
