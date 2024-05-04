@@ -23,8 +23,7 @@ def run_browser(playwright, port, output_file_path):
         page = browser.new_page()
         page.goto(f'http://localhost:{port}')
         page.wait_for_function('document.fonts.ready');
-        # page.evaluateHandle('document.fonts.ready');
-
+        page.evaluate_handle('document.fonts.ready');
         page.pdf(path=output_file_path, format='A4', print_background=True, margin={'top': '0', 'bottom': '0', 'left': '0', 'right': '0'})
         browser.close()
     print("PDF generation complete.")
