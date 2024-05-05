@@ -30,7 +30,12 @@ async def main():
             # 'product': 'firefox',
             # 'executablePath': 'firefox',
             # 'protocol': 'webDriverBiDi',
-            'args': ['--no-sandbox', '--disable-web-security', '--disable-setuid-sandbox']
+            'args': ['--no-sandbox', 
+                     '--disable-web-security', 
+                     '--disable-setuid-sandbox',
+                     '--font-render-hinting=none',
+                     '--force-color-profile=srgb'
+                     ]
         })
         page = await browser.newPage()
         await page.goto(f'http://localhost:{port}', {'waitUntil': ['load', 'domcontentloaded', 'networkidle0'], 'timeout': 5000})

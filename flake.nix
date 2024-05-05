@@ -26,10 +26,11 @@
           # htmldoc
           xdg-utils
           # chromedriver
-          chromium
+          # chromium
           # firefox
+          # epiphany
           # google-chrome
-          # ungoogled-chromium
+          ungoogled-chromium
           (python311.withPackages (ps: with ps; [ pyppeteer playwright ]))
         ];
         # library_dependencies = with pkgs; [ xorg.libX11 gtk3 ];
