@@ -202,7 +202,7 @@ html {
 
 .experience {
   float: left;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 0px;
   width: 100%;
 }
@@ -214,11 +214,11 @@ html {
 
 .experience-list ul {
   margin-top: 0px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .experience-list li {
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 0px;
 }
 
@@ -250,7 +250,7 @@ html {
   /* color: #74521a; */
   color: #53678d;
   /* margin-top: 16px; */
-  margin-bottom: -8px;
+  margin-bottom: 8px;
 }
 
 .main h2 {
@@ -274,5 +274,5 @@ html {
 }
 
 .section {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
