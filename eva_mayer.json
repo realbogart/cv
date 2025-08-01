@@ -34,7 +34,7 @@
   "sidebarSections": [
     {
       "title": "education",
-      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analyst</p><h2>Edinburgh Napier University</h2><p>PgDip in Business Information Technology</p><h2>Budapest Business School</h2><p>BSc in Economics</p>"
+      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analyst</p><h2>Edinburgh Napier University</h2><p class=\"timespan\"></p><p>PgDip in Business Information Technology</p><h2>Budapest Business School</h2><p class=\"timespan\"></p><p>BSc in Economics</p>"
     },
     {
       "title": "certifications",
