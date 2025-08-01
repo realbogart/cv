@@ -1,0 +1,144 @@
+{
+  "outputFilename": "eva_mayer.pdf",
+  "header": {
+    "name": "Eva Mayer",
+    "title": "Data Analyst"
+  },
+  "aboutMe": {
+    "paragraphs": [
+      "Returning to the job market after a career break to re-train as a data analyst, I am now seeking a new opportunity to leverage my analytical, problem-solving, and communication skills. I bring years of experience as a quality assurance tester, along with a background in operational roles within the tech and travel industries."
+    ]
+  },
+  "contact": {
+    "email": {
+      "href": "mailto:eva.mayer@mail.com",
+      "text": "eva.mayer[at]mail.com",
+      "icon": "icons/envelope-solid.svg"
+    },
+    "phone": {
+      "href": "tel:0046762561917",
+      "text": "076 256 1917",
+      "icon": "icons/phone-solid.svg"
+    },
+    "location": {
+      "href": "https://maps.app.goo.gl/yXK4yKhFX4mgbZsbA",
+      "text": "Stockholm, Sweden",
+      "icon": "icons/location.svg"
+    },
+    "linkedin": {
+      "href": "https://linkedin.com/in/evamayer",
+      "text": "linkedin.com/in/evamayer",
+      "icon": "icons/linkedin.svg"
+    }
+  },
+  "sidebarSections": [
+    {
+      "title": "education",
+      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analyst</p><h2>Edinburgh Napier University</h2><p>PgDip in Business Information Technology</p><h2>Budapest Business School</h2><p>BSc in Economics</p>"
+    },
+    {
+      "title": "certifications",
+      "content": "<h2>PL-300 Power BI Data Analyst Associate</h2><p class=\"timespan\">Feb 2024</p><h2>DP-900 Azure Data Fundamentals</h2><p class=\"timespan\">Dec 2023</p>"
+    },
+    {
+      "title": "skills",
+      "content": "<h2>Communication</h2>liaising with developers, providing customer support, negotiating contracts with suppliers<h2>Attention to detail</h2>detecting defects in software, processing requests accurately<h2>Leadership</h2>training new members of staff, managing small teams<h2>Technical</h2>Excel, SQL, JIRA, Python, Power BI"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Stockholm, Sweden",
+      "location": "",
+      "roles": [
+        {
+          "title": "Data Engineer Intern",
+          "period": "Sep 2023 - Mar 2024",
+          "responsibilities": [
+            {
+              "title": "Power BI Development",
+              "description": "Developed a Power BI report for the Corporate Functions department"
+            },
+            {
+              "title": "Professional Development",
+              "description": "Studied for industry certifications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Stockholm, Sweden",
+      "location": "",
+      "roles": [
+        {
+          "title": "Embedded Quality Assurance Tester",
+          "period": "2017 - 2022",
+          "responsibilities": [
+            {
+              "title": "Game Quality Assurance",
+              "description": "Ensured the quality and reliability of the Stellaris computer game by reporting defects and providing feedback to game designers and developers on game features and mechanics"
+            },
+            {
+              "title": "Agile Testing Implementation",
+              "description": "Played a vital role in establishing agile testing best-practices in a cross-functional team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Edinburgh, Scotland",
+      "location": "",
+      "roles": [
+        {
+          "title": "Operations Manager",
+          "period": "2013 - 2016",
+          "responsibilities": [
+            {
+              "title": "Operations Coordination",
+              "description": "Coordinated the day-to-day operations of a small telecoms company"
+            },
+            {
+              "title": "Multi-departmental Management",
+              "description": "Handled various tasks, such as accounting, HR and customer service"
+            },
+            {
+              "title": "Business Development",
+              "description": "Focused on customer retention, supplier relationships and hiring new talent to scale up the business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Edinburgh, Scotland",
+      "location": "",
+      "roles": [
+        {
+          "title": "FIT Assistant Manager and Customer Delivery Manager",
+          "period": "2011 - 2013",
+          "responsibilities": [
+            {
+              "title": "Department Operations",
+              "description": "Coordinated the operations of the Offline FIT Department"
+            },
+            {
+              "title": "Client Portfolio Management",
+              "description": "Ensured the retention of a portfolio of clients and delivery on financial targets, recruited and mentored new staff, monitored team and individual performance"
+            }
+          ]
+        },
+        {
+          "title": "FIT Operations Executive",
+          "period": "2008 - 2011",
+          "responsibilities": [
+            {
+              "title": "Travel Operations",
+              "description": "Processed bookings and requests from global travel partners, created travel itineraries, contracted and reserved accommodation and other travel services"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

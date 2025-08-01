@@ -4,16 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a CV/resume website generator that creates a PDF from HTML/CSS using either Puppeteer or wkhtmltopdf. The project uses Nix for reproducible builds and includes a simple Python development server.
+This is a CV/resume website generator that creates a PDF from HTML/CSS using Playwright (default), Puppeteer, or wkhtmltopdf. The project uses Nix for reproducible builds and includes a simple Python development server.
 
 ## Build Commands
 
-### Primary Build Method (Nix)
+### Primary Build Method (Playwright - Default)
+- `./build-cv.sh [json_file]` - Build PDF using Playwright (default, supports dynamic JSON data)
+- `./build-cv-playwright.sh [json_file]` - Build PDF using Playwright with dynamic data loading
+
+### Alternative Build Methods (Nix)
 - `nix build` - Builds the CV PDF using Puppeteer via the Nix flake
 - `nix build github:realbogart/cv` - Build from GitHub repository
 
-### Alternative Build Methods
-- `./build-cv-puppeteer.sh` - Build PDF using Puppeteer (requires puppeteer-cli installed)
+### Other Build Methods
+- `./build-cv-puppeteer.sh [json_file]` - Build PDF using Puppeteer (requires puppeteer-cli installed)
 - `./build-cv-wkhtmltopdf.sh` - Build PDF using wkhtmltopdf (requires wkhtmltopdf installed)
 
 ### Development
