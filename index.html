@@ -3,200 +3,164 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <!-- <script type="text/javascript" src="live.js"></script> -->
+    <script>
+      async function loadData() {
+        const response = await fetch("data.json");
+        const data = await response.json();
+
+        // Populate header
+        const headerH1 = document.querySelector(".header h1");
+        const headerH2 = document.querySelector(".header h2");
+        headerH1.textContent = data.header.name;
+        headerH2.textContent = data.header.title;
+
+        // Populate ABOUT ME section
+        const aboutMeSection =
+          document.querySelector(".main .section h1").parentElement;
+        const aboutMeParagraphs = aboutMeSection.querySelectorAll("p");
+
+        // Clear existing paragraphs
+        aboutMeParagraphs.forEach((p) => p.remove());
+
+        // Add new paragraphs from JSON
+        data.aboutMe.paragraphs.forEach((paragraphText) => {
+          const p = document.createElement("p");
+          p.innerHTML = paragraphText;
+          aboutMeSection.appendChild(p);
+        });
+
+        // Populate CONTACT section
+        const contactSection =
+          document.querySelector(".left .section h1").parentElement;
+        const contactParagraph = contactSection.querySelector("p");
+
+        // Clear existing contact content
+        if (contactParagraph) {
+          contactParagraph.remove();
+        }
+
+        // Create new contact paragraph with all contact items
+        const p = document.createElement("p");
+        Object.values(data.contact).forEach((contactItem) => {
+          const a = document.createElement("a");
+          a.href = contactItem.href;
+          a.className = "contact";
+          a.target = "_blank";
+          a.innerHTML = `${contactItem.text} <img src="${contactItem.icon}" class="icon" /><br />`;
+          p.appendChild(a);
+        });
+
+        contactSection.appendChild(p);
+
+        // Populate sidebar sections
+        const leftSidebar = document.querySelector(".left");
+        const existingSections = leftSidebar.querySelectorAll(".section");
+
+        // Remove existing sections except CONTACT (which is first)
+        for (let i = 1; i < existingSections.length; i++) {
+          existingSections[i].remove();
+        }
+
+        // Add new sections from JSON
+        data.sidebarSections.forEach((sectionData) => {
+          const sectionDiv = document.createElement("div");
+          sectionDiv.className = "section";
+
+          const h1 = document.createElement("h1");
+          h1.textContent = sectionData.title.toUpperCase();
+          sectionDiv.appendChild(h1);
+
+          const contentDiv = document.createElement("div");
+          contentDiv.innerHTML = sectionData.content;
+          sectionDiv.appendChild(contentDiv);
+
+          leftSidebar.appendChild(sectionDiv);
+        });
+
+        // Populate WORK EXPERIENCE section
+        const workExperienceSection = document.querySelector(".main .section:nth-child(2)");
+        const existingWorkContent = workExperienceSection.querySelectorAll(".experience");
+        
+        // Clear existing work experience content
+        existingWorkContent.forEach(exp => exp.remove());
+        
+        // Add new work experience from JSON
+        data.workExperience.forEach(company => {
+          // Company header
+          const companyDiv = document.createElement("div");
+          companyDiv.className = "experience";
+          
+          const workplaceDiv = document.createElement("div");
+          workplaceDiv.className = "workplace";
+          workplaceDiv.innerHTML = `<b>${company.company}</b>`;
+          
+          const locationDiv = document.createElement("div");
+          locationDiv.className = "info";
+          locationDiv.textContent = company.location;
+          
+          companyDiv.appendChild(workplaceDiv);
+          companyDiv.appendChild(locationDiv);
+          workExperienceSection.appendChild(companyDiv);
+          
+          // Roles
+          company.roles.forEach(role => {
+            const roleDiv = document.createElement("div");
+            roleDiv.className = "experience";
+            
+            const headerDiv = document.createElement("div");
+            headerDiv.className = "experience-header";
+            
+            const roleTitleDiv = document.createElement("div");
+            roleTitleDiv.className = "role";
+            roleTitleDiv.textContent = role.title;
+            
+            const periodDiv = document.createElement("div");
+            periodDiv.className = "info";
+            periodDiv.textContent = role.period;
+            
+            headerDiv.appendChild(roleTitleDiv);
+            headerDiv.appendChild(periodDiv);
+            roleDiv.appendChild(headerDiv);
+            
+            // Responsibilities
+            const listDiv = document.createElement("div");
+            listDiv.className = "experience-list";
+            
+            const ul = document.createElement("ul");
+            role.responsibilities.forEach(resp => {
+              const li = document.createElement("li");
+              li.innerHTML = `<b>${resp.title}:</b> ${resp.description}`;
+              ul.appendChild(li);
+            });
+            
+            listDiv.appendChild(ul);
+            roleDiv.appendChild(listDiv);
+            workExperienceSection.appendChild(roleDiv);
+          });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", loadData);
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1>Johan Yngman</h1>
-        <h2>Senior Software Engineer</h2>
+        <h1></h1>
+        <h2></h2>
       </div>
       <div class="container_content">
         <div class="left">
           <div class="section">
             <h1>CONTACT</h1>
-            <p>
-              <a
-                href="mailto:johan.yngman@gmail.com"
-                class="contact"
-                target="”_blank”"
-              >
-                johan.yngman[at]gmail.com
-                <img src="icons/envelope-solid.svg" class="icon" /><br />
-              </a>
-              <a href="tel:0046730391078" class="contact" target="”_blank”">
-                +46730391078
-                <img src="icons/phone-solid.svg" class="icon" /><br />
-              </a>
-              <a
-                href="https://johanyngman.com"
-                class="contact"
-                target="”_blank”"
-              >
-                johanyngman.com
-                <img src="icons/home.svg" class="icon" /><br />
-              </a>
-              <a
-                href="https://maps.app.goo.gl/yXK4yKhFX4mgbZsbA"
-                class="contact"
-                target="”_blank”"
-              >
-                Stockholm, Sweden
-                <img src="icons/location.svg" class="icon" /><br />
-              </a>
-              <a
-                href="https://linkedin.com/in/johanyngman"
-                class="contact"
-                target="”_blank”"
-              >
-                linkedin.com/in/johan-yngman
-                <img src="icons/linkedin.svg" class="icon" /><br />
-              </a>
-              <a
-                href="https://github.com/realbogart"
-                class="contact"
-                target="”_blank”"
-              >
-                github.com/realbogart
-                <img src="icons/github.svg" class="icon" /><br />
-              </a>
-            </p>
-          </div>
-          <div class="section">
-            <h1>EDUCATION</h1>
-            <h2>The Institute of Technology at Linköping University</h2>
-            <p class="timespan">Aug. 2008 – Mar. 2014</p>
-            <p>Master of Science in Computer Science and Engineering</p>
-          </div>
-          <div class="section">
-            <h1>SKILLS</h1>
-            <h2>Programming</h2>
-            C/C++, CMake, C#, Python, Haskell, Nix, HTML/CSS, WebAssembly
-            <h2>Development Tools</h2>
-            Git, GitLab, Conan, Artifactory, Kubernetes, Docker, Terraform,
-            Ansible, Visual Studio, Jira, SVN
-            <h2>General</h2>
-            Cross-Platform Development (Windows, Linux, macOS), Technical
-            Leadership, CI/CD, Automation, Dependency Management, Infrastructure
-            as Code
-          </div>
-          <div class="section">
-            <h1>HOBBIES</h1>
-            <p>
-              Long distance running, music production, guitar, analogue synths,
-              functional programming
-            </p>
-          </div>
-          <div class="section">
-            <h1>LANGUAGES</h1>
-            <p>
-              Full proficiency in <b>English</b> and <b>Swedish</b>, both
-              written and spoken
-            </p>
-            <p>Basic understanding of <b>German</b></p>
-            <p>Know at least 8 words of <b>Hungarian</b></p>
           </div>
         </div>
         <div class="main">
           <div class="section">
             <h1>ABOUT ME</h1>
-            <p>
-              I grew up in Blomstermåla, Sweden and Studied Computer Science at
-              <a href="https://liu.se/" class="contact" target="_blank"
-                >Linköping University</a
-              >. For the past ten years I've lived in Stockholm and worked at
-              <a
-                href="https://www.paradoxinteractive.com/"
-                target="_blank"
-                class="contact"
-                >Paradox Interactive AB</a
-              >
-              as a C/C++ Programmer, Tech Lead and Build Engineer.
-            </p>
-            <p>
-              In my spare time I hang out with my family, code in Haskell and
-              Nix, develop sound plugins, make music and go for runs.
-            </p>
           </div>
           <div class="section">
             <h1>WORK EXPERIENCE</h1>
-            <div class="experience">
-              <div class="workplace"><b>Paradox Interactive AB</b></div>
-              <div class="info">Stockholm, Sweden</div>
-            </div>
-            <div class="experience">
-              <div class="experience-header">
-                <div class="role">Build Engineer / Engine Programmer</div>
-                <div class="info">Mar. 2021 - Present</div>
-              </div>
-              <div class="experience-list">
-                <ul>
-                  <li>
-                    <b>Package Management:</b> Engineering package management
-                    solution by transitioning the dependency system to Conan
-                  </li>
-                  <li>
-                    <b>Build Infrastructure:</b> Managing maintenance and
-                    enhancement of build system infrastructure on Azure
-                  </li>
-                  <li>
-                    <b>CI/CD System:</b> Maintaining Kubernetes clusters and
-                    self-hosted instances of GitLab and Artifactory
-                  </li>
-                  <li>
-                    <b>CMake Maintenance:</b> Managing third-party dependency
-                    logic for the Clausewitz Engine
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="experience">
-              <div class="experience-header">
-                <div class="role">Tools Tech Lead</div>
-                <div class="info">Sep. 2019 - Mar. 2021</div>
-              </div>
-              <div class="experience-list">
-                <ul>
-                  <li>
-                    <b>Lead a team of Tools Programmers:</b> Responsible for
-                    technical vision, project planning, and mentoring. Oversaw
-                    the development of programming and technical strategies
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="experience">
-              <div class="experience-header">
-                <div class="role">Tools Programmer</div>
-                <div class="info">Apr. 2014 - Sep. 2019</div>
-              </div>
-              <div class="experience-list">
-                <ul>
-                  <li>
-                    <b>Clausewitz Engine:</b> Game engine used by popular games
-                    like Stellaris, Crusader Kings III, Hearts of Iron IV and
-                    Europa Universalis IV. Maintained systems for graphics, GUI,
-                    particle effects, localization and network
-                  </li>
-                  <li>
-                    <b>Tools Foundation:</b> Created framework for GUI tools
-                    development in the Clausewitz Engine
-                  </li>
-                  <li>
-                    <b>Node Editor:</b> Designed a node based visual programming
-                    editor
-                  </li>
-                  <li>
-                    <b>Map Editor:</b> Built an editor enabling Content
-                    Designers to design map based Grand Strategy Games
-                  </li>
-                  <li>
-                    <b>Artist/Content Pipeline:</b> Enhanced asset pipeline
-                    tools used by 3D/2D Artists, Sound Designers, UX Designers
-                    and Content Designers
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -205,8 +169,32 @@
       <!--   - The Bunchkin -->
       <!-- </div> -->
     </div>
-    <div style="overflow: hidden; height: 0; font-family: 'SourceSerifPro-Light';">&nbsp;</div>
-    <div style="overflow: hidden; height: 0; font-family: 'SourceSerifPro_18pt-Light';">&nbsp;</div>
-    <div style="overflow: hidden; height: 0; font-family: 'SourceSerifPro_36pt-Light';">&nbsp;</div>
+    <div
+      style="
+        overflow: hidden;
+        height: 0;
+        font-family: &quot;SourceSerifPro-Light&quot;;
+      "
+    >
+      &nbsp;
+    </div>
+    <div
+      style="
+        overflow: hidden;
+        height: 0;
+        font-family: &quot;SourceSerifPro_18pt-Light&quot;;
+      "
+    >
+      &nbsp;
+    </div>
+    <div
+      style="
+        overflow: hidden;
+        height: 0;
+        font-family: &quot;SourceSerifPro_36pt-Light&quot;;
+      "
+    >
+      &nbsp;
+    </div>
   </body>
 </html>

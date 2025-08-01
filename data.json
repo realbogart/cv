@@ -1,0 +1,128 @@
+{
+  "header": {
+    "name": "Johan Yngman",
+    "title": "Senior Software Engineer"
+  },
+  "aboutMe": {
+    "paragraphs": [
+      "I grew up in Blomstermåla, Sweden and Studied Computer Science at <a href=\"https://liu.se/\" class=\"contact\" target=\"_blank\">Linköping University</a>. For the past ten years I've lived in Stockholm and worked at <a href=\"https://www.paradoxinteractive.com/\" target=\"_blank\" class=\"contact\">Paradox Interactive AB</a> as a C/C++ Programmer, Tech Lead and Build Engineer.",
+      "In my spare time I hang out with my family, code in Haskell and Nix, develop sound plugins, make music and go for runs."
+    ]
+  },
+  "contact": {
+    "email": {
+      "href": "mailto:johan.yngman@gmail.com",
+      "text": "johan.yngman[at]gmail.com",
+      "icon": "icons/envelope-solid.svg"
+    },
+    "phone": {
+      "href": "tel:0046730391078",
+      "text": "+46730391078",
+      "icon": "icons/phone-solid.svg"
+    },
+    "website": {
+      "href": "https://johanyngman.com",
+      "text": "johanyngman.com",
+      "icon": "icons/home.svg"
+    },
+    "location": {
+      "href": "https://maps.app.goo.gl/yXK4yKhFX4mgbZsbA",
+      "text": "Stockholm, Sweden",
+      "icon": "icons/location.svg"
+    },
+    "linkedin": {
+      "href": "https://linkedin.com/in/johanyngman",
+      "text": "linkedin.com/in/johan-yngman",
+      "icon": "icons/linkedin.svg"
+    },
+    "github": {
+      "href": "https://github.com/realbogart",
+      "text": "github.com/realbogart",
+      "icon": "icons/github.svg"
+    }
+  },
+  "sidebarSections": [
+    {
+      "title": "education",
+      "content": "<h2>The Institute of Technology at Linköping University</h2><p class=\"timespan\">Aug. 2008 – Mar. 2014</p><p>Master of Science in Computer Science and Engineering</p>"
+    },
+    {
+      "title": "skills",
+      "content": "<h2>Programming</h2>C/C++, CMake, C#, Python, Haskell, Nix, HTML/CSS, WebAssembly<h2>Development Tools</h2>Git, GitLab, Conan, Artifactory, Kubernetes, Docker, Terraform, Ansible, Visual Studio, Jira, SVN<h2>General</h2>Cross-Platform Development (Windows, Linux, macOS), Technical Leadership, CI/CD, Automation, Dependency Management, Infrastructure as Code"
+    },
+    {
+      "title": "hobbies",
+      "content": "<p>Long distance running, music production, guitar, analogue synths, functional programming</p>"
+    },
+    {
+      "title": "languages",
+      "content": "<p>Full proficiency in <b>English</b> and <b>Swedish</b>, both written and spoken</p><p>Basic understanding of <b>German</b></p><p>Know at least 8 words of <b>Hungarian</b></p>"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Paradox Interactive AB",
+      "location": "Stockholm, Sweden",
+      "roles": [
+        {
+          "title": "Build Engineer / Engine Programmer",
+          "period": "Mar. 2021 - Present",
+          "responsibilities": [
+            {
+              "title": "Package Management",
+              "description": "Engineering package management solution by transitioning the dependency system to Conan"
+            },
+            {
+              "title": "Build Infrastructure",
+              "description": "Managing maintenance and enhancement of build system infrastructure on Azure"
+            },
+            {
+              "title": "CI/CD System",
+              "description": "Maintaining Kubernetes clusters and self-hosted instances of GitLab and Artifactory"
+            },
+            {
+              "title": "CMake Maintenance",
+              "description": "Managing third-party dependency logic for the Clausewitz Engine"
+            }
+          ]
+        },
+        {
+          "title": "Tools Tech Lead",
+          "period": "Sep. 2019 - Mar. 2021",
+          "responsibilities": [
+            {
+              "title": "Lead a team of Tools Programmers",
+              "description": "Responsible for technical vision, project planning, and mentoring. Oversaw the development of programming and technical strategies"
+            }
+          ]
+        },
+        {
+          "title": "Tools Programmer",
+          "period": "Apr. 2014 - Sep. 2019",
+          "responsibilities": [
+            {
+              "title": "Clausewitz Engine",
+              "description": "Game engine used by popular games like Stellaris, Crusader Kings III, Hearts of Iron IV and Europa Universalis IV. Maintained systems for graphics, GUI, particle effects, localization and network"
+            },
+            {
+              "title": "Tools Foundation",
+              "description": "Created framework for GUI tools development in the Clausewitz Engine"
+            },
+            {
+              "title": "Node Editor",
+              "description": "Designed a node based visual programming editor"
+            },
+            {
+              "title": "Map Editor",
+              "description": "Built an editor enabling Content Designers to design map based Grand Strategy Games"
+            },
+            {
+              "title": "Artist/Content Pipeline",
+              "description": "Enhanced asset pipeline tools used by 3D/2D Artists, Sound Designers, UX Designers and Content Designers"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
