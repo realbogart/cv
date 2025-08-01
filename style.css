@@ -228,10 +228,10 @@ html {
 
 .role {
   font-family: "SourceSerifPro_18pt-Light";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   float: left;
-  color: #d81159;
+  color: #231f20;
   /* font-style: italic; */
 }
 
@@ -241,6 +241,7 @@ html {
   font-weight: bold;
   /* margin-bottom: -16px; */
   float: left;
+  color: #d81159;
   /* font-style: italic; */
 }
 

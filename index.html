@@ -131,7 +131,11 @@
             const ul = document.createElement("ul");
             role.responsibilities.forEach(resp => {
               const li = document.createElement("li");
-              li.innerHTML = `<b>${resp.title}:</b> ${resp.description}`;
+              if (resp.title) {
+                li.innerHTML = `<b>${resp.title}:</b> ${resp.description}`;
+              } else {
+                li.innerHTML = resp.description;
+              }
               ul.appendChild(li);
             });
             

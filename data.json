@@ -62,12 +62,36 @@
   ],
   "workExperience": [
     {
+      "company": "Mojang AB",
+      "location": "Stockholm, Sweden",
+      "roles": [
+        {
+          "title": "Build Engineer",
+          "period": "Nov. 2024 - Present",
+          "responsibilities": [
+            {
+              "title": "Build Process Optimization",
+              "description": "Optimizing build processes to improve efficiency and reduce build times"
+            },
+            {
+              "title": "Azure DevOps Integration",
+              "description": "Working with Azure DevOps to enhance CI/CD pipelines and deployment workflows"
+            },
+            {
+              "title": "Localization Automation",
+              "description": "Improved localization automation processes using C++ to streamline translation workflows"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "company": "Paradox Interactive AB",
       "location": "Stockholm, Sweden",
       "roles": [
         {
           "title": "Build Engineer / Engine Programmer",
-          "period": "Mar. 2021 - Present",
+          "period": "Mar. 2021 - Aug. 2024",
           "responsibilities": [
             {
               "title": "Package Management",

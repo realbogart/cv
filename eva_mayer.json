@@ -34,7 +34,7 @@
   "sidebarSections": [
     {
       "title": "education",
-      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analytics</p><p><strong>Selected Course Projects:</strong></p><p>• Digital website analytics for Hedvig</p><p>• Python-based Twitter scraper & visualizer</p><p>• Online SQL murder mystery game: <a href=\"https://evamayer.github.io/\" target=\"_blank\">https://evamayer.github.io/</a></p><h2>Edinburgh Napier University</h2><p class=\"timespan\"></p><p>PgDip in Business Information Technology</p><h2>Budapest University of Economics and Business</h2><p class=\"timespan\"></p><p>BSc in Economics</p>"
+      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analytics</p><p><strong>Selected Course Projects:</strong></p><p>• Digital website analytics for Hedvig</p><p>• Python-based Twitter scraper & visualizer</p><p>• Online SQL murder mystery game: <a href=\"https://evamayer.github.io/\" target=\"_blank\" class=\"contact\">https://evamayer.github.io/</a></p><h2>Edinburgh Napier University</h2><p class=\"timespan\"></p><p>PgDip in Business Information Technology</p><h2>Budapest University of Economics and Business</h2><p class=\"timespan\"></p><p>BSc in Economics</p>"
     },
     {
       "title": "certifications",
@@ -55,15 +55,12 @@
           "period": "May 2025 - PRESENT",
           "responsibilities": [
             {
-              "title": "General Administrative Support",
               "description": "Providing general administrative support for an IT consulting company"
             },
             {
-              "title": "Financial Management",
               "description": "Performing bookkeeping in Visma"
             },
             {
-              "title": "Process Improvement",
               "description": "Creating and documenting work processes to increase efficiency"
             }
           ]
@@ -75,15 +72,13 @@
       "location": "Stockholm, Sweden",
       "roles": [
         {
-          "title": "Data Engineer Intern",
+          "title": "Data Analyst Intern",
           "period": "Sep 2023 - Mar 2024",
           "responsibilities": [
             {
-              "title": "Power BI Development",
               "description": "Developed a Power BI report for the Corporate Functions department"
             },
             {
-              "title": "Professional Development",
               "description": "Studied for industry certifications"
             }
           ]
@@ -99,31 +94,24 @@
           "period": "2017 - 2022",
           "responsibilities": [
             {
-              "title": "Game Quality Assurance",
               "description": "Ensured the functional quality of a computer game as part of an agile, cross-functional team"
             },
             {
-              "title": "Issue Management",
               "description": "Worked with JIRA to identify, document and prioritize software issues"
             },
             {
-              "title": "Test Planning and Execution",
               "description": "Created and executed test plans"
             },
             {
-              "title": "Data Analysis",
               "description": "Used SQL in Snowflake to query telemetry data, supporting the Analytics team in tracking game performance and user behavior"
             },
             {
-              "title": "Team Leadership",
               "description": "Led and supported outsourced QA team members"
             },
             {
-              "title": "Project Management Support",
               "description": "Assisted Producers with backlog management and facilitating meetings"
             },
             {
-              "title": "Documentation and Best Practices",
               "description": "Worked with Confluence to establish and document agile testing best-practices in a growing QA department"
             }
           ]
@@ -139,46 +127,13 @@
           "period": "2013 - 2016",
           "responsibilities": [
             {
-              "title": "Operations Coordination",
               "description": "Coordinated the day-to-day operations of a small telecoms company"
             },
             {
-              "title": "Multi-departmental Management",
               "description": "Handled various tasks, such as accounting, HR and customer service"
             },
             {
-              "title": "Business Development",
               "description": "Focused on customer retention, supplier relationships and hiring new talent to scale up the business"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": "JAC Travel",
-      "location": "Edinburgh, Scotland",
-      "roles": [
-        {
-          "title": "FIT Assistant Manager and Customer Delivery Manager",
-          "period": "2011 - 2013",
-          "responsibilities": [
-            {
-              "title": "Department Operations",
-              "description": "Coordinated the operations of the Offline FIT Department"
-            },
-            {
-              "title": "Client Portfolio Management",
-              "description": "Ensured the retention of a portfolio of clients and delivery on financial targets, recruited and mentored new staff, monitored team and individual performance"
-            }
-          ]
-        },
-        {
-          "title": "FIT Operations Executive",
-          "period": "2008 - 2011",
-          "responsibilities": [
-            {
-              "title": "Travel Operations",
-              "description": "Processed bookings and requests from global travel partners, created travel itineraries, contracted and reserved accommodation and other travel services"
             }
           ]
         }
