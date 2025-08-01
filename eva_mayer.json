@@ -6,7 +6,7 @@
   },
   "aboutMe": {
     "paragraphs": [
-      "Returning to the job market after a career break to re-train as a data analyst, I am now seeking a new opportunity to leverage my analytical, problem-solving, and communication skills. I bring years of experience as a quality assurance tester, along with a background in operational roles within the tech and travel industries."
+      "Data analyst graduate with a background in business operations and quality assurance, skilled in Excel, Power BI and SQL. Experienced in customer support, generating insights and cross-functional collaboration. Seeking a new opportunity to leverage my analytical, problem-solving and communication skills in a data-driven role."
     ]
   },
   "contact": {
@@ -34,7 +34,7 @@
   "sidebarSections": [
     {
       "title": "education",
-      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analyst</p><h2>Edinburgh Napier University</h2><p class=\"timespan\"></p><p>PgDip in Business Information Technology</p><h2>Budapest Business School</h2><p class=\"timespan\"></p><p>BSc in Economics</p>"
+      "content": "<h2>Hyper Island</h2><p class=\"timespan\">2022 - 2024</p><p>Data Analytics</p><p><strong>Selected Course Projects:</strong></p><p>• Digital website analytics for Hedvig</p><p>• Python-based Twitter scraper & visualizer</p><p>• Online SQL murder mystery game: <a href=\"https://evamayer.github.io/\" target=\"_blank\">https://evamayer.github.io/</a></p><h2>Edinburgh Napier University</h2><p class=\"timespan\"></p><p>PgDip in Business Information Technology</p><h2>Budapest University of Economics and Business</h2><p class=\"timespan\"></p><p>BSc in Economics</p>"
     },
     {
       "title": "certifications",
@@ -42,10 +42,34 @@
     },
     {
       "title": "skills",
-      "content": "<h2>Communication</h2>liaising with developers, providing customer support, negotiating contracts with suppliers<h2>Attention to detail</h2>detecting defects in software, processing requests accurately<h2>Leadership</h2>training new members of staff, managing small teams<h2>Technical</h2>Excel, SQL, JIRA, Python, Power BI"
+      "content": "<h2>Communication</h2>customer support, supplier negotiations, stakeholder communication<h2>Technical</h2>Excel, Power BI, SQL, Tableau, JIRA, Confluence<h2>Languages</h2>English (Proficient), Hungarian (Native), Swedish (Intermediate), German (Elementary)"
     }
   ],
   "workExperience": [
+    {
+      "company": "Sonic Stride AB",
+      "location": "Stockholm, Sweden",
+      "roles": [
+        {
+          "title": "Administrative Support",
+          "period": "May 2025 - PRESENT",
+          "responsibilities": [
+            {
+              "title": "General Administrative Support",
+              "description": "Providing general administrative support for an IT consulting company"
+            },
+            {
+              "title": "Financial Management",
+              "description": "Performing bookkeeping in Visma"
+            },
+            {
+              "title": "Process Improvement",
+              "description": "Creating and documenting work processes to increase efficiency"
+            }
+          ]
+        }
+      ]
+    },
     {
       "company": "Capgemini, Data & Insights",
       "location": "Stockholm, Sweden",
@@ -76,11 +100,31 @@
           "responsibilities": [
             {
               "title": "Game Quality Assurance",
-              "description": "Ensured the quality and reliability of the Stellaris computer game by reporting defects and providing feedback to game designers and developers on game features and mechanics"
+              "description": "Ensured the functional quality of a computer game as part of an agile, cross-functional team"
             },
             {
-              "title": "Agile Testing Implementation",
-              "description": "Played a vital role in establishing agile testing best-practices in a cross-functional team"
+              "title": "Issue Management",
+              "description": "Worked with JIRA to identify, document and prioritize software issues"
+            },
+            {
+              "title": "Test Planning and Execution",
+              "description": "Created and executed test plans"
+            },
+            {
+              "title": "Data Analysis",
+              "description": "Used SQL in Snowflake to query telemetry data, supporting the Analytics team in tracking game performance and user behavior"
+            },
+            {
+              "title": "Team Leadership",
+              "description": "Led and supported outsourced QA team members"
+            },
+            {
+              "title": "Project Management Support",
+              "description": "Assisted Producers with backlog management and facilitating meetings"
+            },
+            {
+              "title": "Documentation and Best Practices",
+              "description": "Worked with Confluence to establish and document agile testing best-practices in a growing QA department"
             }
           ]
         }
