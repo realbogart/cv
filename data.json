@@ -6,8 +6,9 @@
   },
   "aboutMe": {
     "paragraphs": [
-      "I grew up in Blomstermåla, Sweden and Studied Computer Science at <a href=\"https://liu.se/\" class=\"contact\" target=\"_blank\">Linköping University</a>. For the past ten years I've lived in Stockholm and worked at <a href=\"https://www.paradoxinteractive.com/\" target=\"_blank\" class=\"contact\">Paradox Interactive AB</a> as a C/C++ Programmer, Tech Lead and Build Engineer.",
-      "In my spare time I hang out with my family, code in Haskell and Nix, develop sound plugins, make music and go for runs."
+      "Passionate programmer who finds great satisfaction in making developers more efficient through tools and automation, whether it's optimizing build processes, enhancing CI/CD pipelines, or creating developer-friendly frameworks.",
+      "In my spare time I hang out with my family, code in Haskell and Nix, develop sound plugins, make music and go for runs.",
+      "Founder and CEO of <a href=\"https://www.sonic-stride.com/\" class=\"contact\" target=\"_blank\">Sonic Stride AB</a>."
     ]
   },
   "contact": {
@@ -66,19 +67,19 @@
       "location": "Stockholm, Sweden",
       "roles": [
         {
-          "title": "Build Engineer",
+          "title": "Build Engineer / Programmer",
           "period": "Nov. 2024 - Present",
           "responsibilities": [
             {
-              "title": "Build Process Optimization",
-              "description": "Optimizing build processes to improve efficiency and reduce build times"
+              "title": "Build Processes",
+              "description": "Optimizing build processes to improve efficiency, stability and reduce build times"
             },
             {
-              "title": "Azure DevOps Integration",
+              "title": "Pipeline Maintenance",
               "description": "Working with Azure DevOps to enhance CI/CD pipelines and deployment workflows"
             },
             {
-              "title": "Localization Automation",
+              "title": "Localization",
               "description": "Improved localization automation processes using C++ to streamline translation workflows"
             }
           ]

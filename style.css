@@ -202,8 +202,8 @@ html {
 
 .experience {
   float: left;
-  margin-top: 2px;
-  margin-bottom: 0px;
+  margin-top: 6px;
+  margin-bottom: 4px;
   width: 100%;
 }
 
@@ -228,7 +228,7 @@ html {
 
 .role {
   font-family: "SourceSerifPro_18pt-Light";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   float: left;
   color: #231f20;
@@ -237,7 +237,7 @@ html {
 
 .workplace {
   font-family: "SourceSerifPro_18pt-Light";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   /* margin-bottom: -16px; */
   float: left;
