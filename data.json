@@ -1,4 +1,5 @@
 {
+  "outputFilename": "cv.pdf",
   "header": {
     "name": "Johan Yngman",
     "title": "Senior Software Engineer"

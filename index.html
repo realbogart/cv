@@ -5,7 +5,9 @@
     <!-- <script type="text/javascript" src="live.js"></script> -->
     <script>
       async function loadData() {
-        const response = await fetch("data.json");
+        const urlParams = new URLSearchParams(window.location.search);
+        const jsonFile = urlParams.get('data') || 'data.json';
+        const response = await fetch(jsonFile);
         const data = await response.json();
 
         // Populate header
