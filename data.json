@@ -6,7 +6,7 @@
   },
   "aboutMe": {
     "paragraphs": [
-      "Passionate programmer who finds great satisfaction in making developers more efficient through tools and automation, whether it's optimizing build processes, enhancing CI/CD pipelines, or creating easy-to-use APIs.",
+      "Passionate programmer who enjoys improving the developer experience through tools and automation, whether it's optimizing build processes, enhancing CI/CD pipelines,, or creating easy-to-use APIs.",
       "In my spare time I hang out with my family, code in Haskell and Nix, develop sound plugins, make music and go for runs.",
       "Founder and CEO of <a href=\"https://www.sonic-stride.com/\" class=\"contact\" target=\"_blank\">Sonic Stride AB</a>."
     ]
@@ -50,7 +50,7 @@
     },
     {
       "title": "skills",
-      "content": "<h2>Programming</h2>C/C++, CMake, C#, Python, Haskell, Nix, HTML/CSS<h2>Development Tools</h2>Git, GitLab, GitHub, Claude Code, Conan, Artifactory, Kubernetes, Docker, Terraform, Ansible, Visual Studio, Jira, SVN<h2>General</h2>Cross-Platform Development (Windows, Linux, macOS), Technical Leadership, CI/CD, Automation, Dependency Management, Infrastructure as Code"
+      "content": "<h2>Programming</h2>C/C++, CMake, C#, Python, Haskell, Nix, HTML/CSS<h2>Development Tools</h2>Git, GitLab, GitHub, Conan, Artifactory, Kubernetes, Docker, Terraform, Claude Code, Ansible, Visual Studio, SVN<h2>General</h2>Cross-Platform Development (Windows, Linux, macOS), Technical Leadership, CI/CD, Automation, Dependency Management, Infrastructure as Code"
     },
     {
       "title": "hobbies",
@@ -67,7 +67,7 @@
       "location": "Stockholm, Sweden",
       "roles": [
         {
-          "title": "Build Engineer / Programmer",
+          "title": "Build Engineer (Freelance Consultant)",
           "period": "Nov. 2024 - Present",
           "responsibilities": [
             {
